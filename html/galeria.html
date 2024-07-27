@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li>
+                    <img src="../images/Tempest 1.jpeg" alt="Logo" class="logo">
+                    <h1>Tempestad</h1>
+                </li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="descarga.html">Descarga</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="galeria" class="section-gallery">
+        <h2>Galería de Imágenes</h2>
+
+        <!-- Carrusel 1 -->
+        <div class="carousel-1">
+            <div class="carousel-1-container">
+                <img src="../images/SaoIF 1.png" alt="Imagen 1">
+                <img src="../images/SaoIF 2.png" alt="Imagen 2">
+                <img src="../images/SaoIF 3.png" alt="Imagen 3">
+                <img src="../images/SaoIF 4.png" alt="Imagen 4">
+                <img src="../images/SaoIF 5.png" alt="Imagen 5">
+                <img src="../images/SaoIF 6.jpg" alt="Imagen 6">
+                <img src="../images/SaoIF 7.jpg" alt="Imagen 7">
+            </div>
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+        </div>
+
+        <!-- Carrusel 2 -->
+        <div class="carousel-2">
+            <div class="carousel-2-container">
+                <img src="../images/Tarisland 2.jpg" alt="Imagen 10">
+                <img src="../images/Tarisland 3.jpg" alt="Imagen 11">
+                <img src="../images/Tarisland 4.jpg" alt="Imagen 12">
+            </div>
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://api.whatsapp.com/send/?phone=542975440834" rel="noopener" target="_blank">
+                <img src="../images/icons8-whatsapp-50.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/yair_herrera26/" rel="noopener" target="_blank">
+                <img src="../images/icons8-insta-50.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" rel="noopener" target="_blank">
+                <img src="../images/icons8-facebook-50.png" alt="Facebook">
+            </a>
+            <a href="https://discord.gg/UED4TXmzNx" rel="noopener" target="_blank">
+                <img src="../images/icons8-discord-50.png" alt="Discord">
+            </a>
+        </div>
+        <h6><em>© Lucca Herrera</em></h6>
+    </footer>
+
+    <script>
+        // JavaScript para el funcionamiento del Carrusel 1
+        const carousel1 = document.querySelector('.carousel-1-container');
+        const prevBtn1 = document.querySelector('.carousel-1 .prev');
+        const nextBtn1 = document.querySelector('.carousel-1 .next');
+        let index1 = 0;
+
+        nextBtn1.addEventListener('click', () => {
+            index1 = (index1 + 1) % carousel1.children.length;
+            carousel1.style.transform = `translateX(${-index1 * 100}%)`;
+        });
+
+        prevBtn1.addEventListener('click', () => {
+            index1 = (index1 - 1 + carousel1.children.length) % carousel1.children.length;
+            carousel1.style.transform = `translateX(${-index1 * 100}%)`;
+        });
+
+        // JavaScript para el funcionamiento del Carrusel 2
+        const carousel2 = document.querySelector('.carousel-2-container');
+        const prevBtn2 = document.querySelector('.carousel-2 .prev');
+        const nextBtn2 = document.querySelector('.carousel-2 .next');
+        let index2 = 0;
+
+        nextBtn2.addEventListener('click', () => {
+            index2 = (index2 + 1) % carousel2.children.length;
+            carousel2.style.transform = `translateX(${-index2 * 100}%)`;
+        });
+
+        prevBtn2.addEventListener('click', () => {
+            index2 = (index2 - 1 + carousel2.children.length) % carousel2.children.length;
+            carousel2.style.transform = `translateX(${-index2 * 100}%)`;
+        });
+    </script>
+</body>
+
+</html>
