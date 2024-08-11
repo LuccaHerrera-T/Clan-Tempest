@@ -61,6 +61,22 @@ header {
     width: 50px;
 }
 
+/* Estilos del menú hamburguesa */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+}
+
+.menu-bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.4s;
+}
+
 /* Estilos de la sección home */
 .section-home {
     padding: 2rem 1rem;
@@ -287,6 +303,36 @@ footer {
     .nav-links {
         flex-direction: column;
         align-items: center;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .nav-links li a {
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 
     .image-text-container {
