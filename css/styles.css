@@ -30,8 +30,18 @@ header {
     padding: 0 20px;
 }
 
-.navbar h1 {
-    margin: auto;
+.logo img {
+    width: 50px;
+}
+
+h1 {
+    margin: 0;
+    color: rgb(185, 185, 245);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
 }
 
 .nav-links {
@@ -55,10 +65,6 @@ header {
 .nav-links a:hover {
     background: #575757;
     border-radius: 5px;
-}
-
-.logo {
-    width: 50px;
 }
 
 /* Estilos del menú hamburguesa */
@@ -298,15 +304,7 @@ footer {
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-    }
-
-    .nav-links {
-        flex-direction: column;
         align-items: center;
-    }
-
-    .menu-icon {
-        display: flex;
     }
 
     .nav-links {
@@ -329,6 +327,10 @@ footer {
         text-decoration: none;
         padding: 15px;
         display: block;
+    }
+
+    .menu-icon {
+        display: flex;
     }
 
     .nav-links.active {
