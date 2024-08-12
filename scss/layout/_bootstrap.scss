@@ -1,0 +1,12 @@
+/* Bootstrap Integration */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.mt-2 {
+    margin-top: 2rem !important;
+}

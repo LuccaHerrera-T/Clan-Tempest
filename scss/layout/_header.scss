@@ -1,0 +1,48 @@
+/* Estilos del encabezado y navegación */
+header {
+    background: #333;
+    color: rgb(185, 185, 245);
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    h1 {
+        margin: auto;
+    }
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+    li {
+        display: flex;
+        align-items: center;
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background 0.3s;
+
+            &:hover {
+                background: #575757;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.logo {
+    width: 50px;
+}
