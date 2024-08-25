@@ -1,1 +1,1 @@
-Repositorio de Prueba para la pagina web del Clan Tempestad
+Pagina web de prueba para los clanes, gremios, hermandades de mi amigo.
