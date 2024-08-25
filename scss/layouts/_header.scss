@@ -1,0 +1,71 @@
+/* Estilos del encabezado y navegación */
+header {
+    background: #333;
+    color: rgb(185, 185, 245);
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: auto; /* Responsive logo size */
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.menu-toggle {
+    display: none; /* Hide menu toggle by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Menú desplegable */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background: #575757;
+    border-radius: 5px;
+}

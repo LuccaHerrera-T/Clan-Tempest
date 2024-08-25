@@ -4,47 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clan Tempestad</title>
+    <title>Gremios - Tempest</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="../js/menu.js"></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <ul class="nav-links">
-                <li>
-                    <img src="images/Tempest 1.jpeg" alt="Logo" class="logo">
+            <div class="nav-container">
+                <!-- Logo y nombre en el menú -->
+                <div class="logo-container">
+                    <img src="images/Tempest 1.jpeg" alt="Logo Tempestad" class="logo">
                     <h1>Tempestad</h1>
-                </li>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="html/nosotros.html">Nosotros</a></li>
-                <li><a href="html/galeria.html">Galería</a></li>
-                <li><a href="/htmlcontacto.html">Contacto</a></li>
-                <li><a href="html/descarga.html">Descarga</a></li>
-            </ul>
+                </div>
+                <!-- Menú hamburguesa -->
+                <div class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <!-- Enlaces de navegación -->
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="html/nosotros.html">Nosotros</a></li>
+                    <li><a href="html/galeria.html">Galería</a></li>
+                    <li><a href="html/informacion.html">Información</a></li>
+                    <li><a href="html/descarga.html">Descarga</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <section id="home" class="section-home">
         <div class="image-text-container">
             <div class="image-box">
-                <img src="images/Lobo 1.jpeg" alt="Logo SaoIF">
+                <img src="images/Lobo 1.jpeg" alt="Imagen del servidor Tempestad">
                 <p>
                     Servidor: EN-SERVER-01
                     <br>Nombre: Tempestad
                     <br>Id del clan: 2475167991
-                    <br>Requisitos: hablar español, ser activos y unirse al discord para coordinar.
                 </p>
             </div>
-            <div class="image-box">
-                <img src="images/Tarisland 1.jpeg" alt="Logo Tarisland">
+            <!--<div class="image-box">
+                <img src="." alt=".">
                 <p>
-                    Servidor: LATAM-1
-                    <br>Nombre: Tempestad
-                    <br>Id del clan: 400012307
-                    <br>Requisitos: hablar español, ser activos y unirse al discord para coordinar.
+                    Servidor:
+                    <br>Nombre:
+                    <br>Id del clan:
                 </p>
-            </div>
+            </div>-->
         </div>
     </section>
 
@@ -53,17 +62,11 @@
             <a href="https://api.whatsapp.com/send/?phone=542975440834" rel="noopener" target="_blank">
                 <img src="images/icons8-whatsapp-50.png" alt="WhatsApp">
             </a>
-            <a href="https://www.instagram.com/yair_herrera26/" rel="noopener" target="_blank">
-                <img src="images/icons8-insta-50.png" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com" rel="noopener" target="_blank">
-                <img src="images/icons8-facebook-50.png" alt="Facebook">
-            </a>
             <a href="https://discord.gg/UED4TXmzNx" rel="noopener" target="_blank">
                 <img src="images/icons8-discord-50.png" alt="Discord">
             </a>
         </div>
-        <h6><em>© Lucca Herrera</em></h6>
+        <h6><em>©Lucca Herrera</em></h6>
     </footer>
 </body>
 

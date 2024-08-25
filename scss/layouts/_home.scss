@@ -1,0 +1,33 @@
+/* Estilos de la sección home */
+.section-home {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: rgb(185, 185, 245);
+}
+
+.image-text-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.image-box {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background: #bed6fc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.image-box p {
+    margin-top: 1rem;
+    text-align: left;
+}

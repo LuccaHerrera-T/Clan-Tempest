@@ -1,0 +1,50 @@
+/* Estilos para carruseles */
+.carousel-1,
+.carousel-2 {
+    position: relative;
+    max-width: 100%;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-1-container,
+.carousel-2-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-1 img,
+.carousel-2 img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.carousel-1 button,
+.carousel-2 button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.carousel-1 button:hover,
+.carousel-2 button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-1 .prev,
+.carousel-2 .prev {
+    left: 0;
+}
+
+.carousel-1 .next,
+.carousel-2 .next {
+    right: 0;
+}

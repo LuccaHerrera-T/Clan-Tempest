@@ -1,0 +1,361 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background-color: #bed6fc;
+    color: #333;
+}
+
+/* Estilos del encabezado y navegación */
+header {
+    background: #333;
+    color: rgb(185, 185, 245);
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    /* Responsive logo size */
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.menu-toggle {
+    display: none; /* Hide menu toggle by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Menú desplegable */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background: #575757;
+    border-radius: 5px;
+}
+
+/* Estilos de la sección home */
+.section-home {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: rgb(185, 185, 245);
+}
+
+.image-text-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.image-box {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background: #bed6fc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.image-box p {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+/* Estilos para carruseles */
+.carousel-1, .carousel-2 {
+    position: relative;
+    max-width: 100%;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-1-container, .carousel-2-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-1 img, .carousel-2 img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.carousel-1 button, .carousel-2 button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.carousel-1 button:hover, .carousel-2 button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-1 .prev, .carousel-2 .prev {
+    left: 0;
+}
+
+.carousel-1 .next, .carousel-2 .next {
+    right: 0;
+}
+
+/* Estilos del pie de página */
+footer {
+    background: rgb(185, 185, 245);
+    color: #000000;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links li {
+    display: flex;
+    align-items: center;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
+}
+
+.social-links a:hover {
+    color: #aaa;
+}
+
+/* Estilos de la sección de descarga */
+.section-download ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section-download li {
+    margin: 1rem 0;
+}
+
+.section-download a {
+    display: block;
+    margin: 0.5rem 0;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.section-download a:hover {
+    color: #0056b3;
+}
+
+/* Estilos de las secciones */
+.section-about,
+.section-contact,
+.section-gallery,
+.section-download {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: rgb(185, 185, 245);
+    margin-top: 2rem;
+}
+
+.section-about h2,
+.section-contact h2,
+.section-gallery h2,
+.section-download h2 {
+    margin-bottom: 1rem;
+}
+
+.section-contact p,
+.section-about p {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-form label {
+    align-self: flex-start;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.5rem;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact-form button:hover {
+    background: #575757;
+}
+
+/* Flexbox y Grid */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.flex-item,
+.grid-item {
+    background: #bed6fc;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links by default on small screens */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show nav links when active */
+    }
+
+    .menu-toggle {
+        display: flex; /* Show menu toggle button */
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0; /* Hide the middle bar */
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px); /* Cross effect */
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px); /* Cross effect */
+    }
+
+    .nav-links a {
+        padding: 1rem;
+        color: #ffffff;
+        background: #333;
+        border-bottom: 1px solid #575757;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-home,
+    .section-about,
+    .section-contact,
+    .section-gallery,
+    .section-download {
+        padding: 1rem;
+    }
+
+    .logo {
+        width: 30px;
+    }
+}

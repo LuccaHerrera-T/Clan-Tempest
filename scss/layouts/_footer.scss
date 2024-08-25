@@ -1,0 +1,36 @@
+/* Estilos del pie de página */
+footer {
+    background: rgb(185, 185, 245);
+    color: #000000;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links li {
+    display: flex;
+    align-items: center;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
+}
+
+.social-links a:hover {
+    color: #aaa;
+}

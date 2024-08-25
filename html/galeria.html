@@ -4,24 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería</title>
+    <title>Gremios - Tempest</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/menu.js"></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <ul class="nav-links">
-                <li>
-                    <img src="../images/Tempest 1.jpeg" alt="Logo" class="logo">
+            <div class="nav-container">
+                <!-- Logo y nombre en el menú -->
+                <div class="logo-container">
+                    <img src="../images/Tempest 1.jpeg" alt="Logo Tempestad" class="logo">
                     <h1>Tempestad</h1>
-                </li>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="descarga.html">Descarga</a></li>
-            </ul>
+                </div>
+                <!-- Menú hamburguesa -->
+                <div class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <!-- Enlaces de navegación -->
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="informacion.html">Información</a></li>
+                    <li><a href="descarga.html">Descarga</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -31,28 +42,28 @@
         <!-- Carrusel 1 -->
         <div class="carousel-1">
             <div class="carousel-1-container">
-                <img src="../images/SaoIF 1.png" alt="Imagen 1">
-                <img src="../images/SaoIF 2.png" alt="Imagen 2">
-                <img src="../images/SaoIF 3.png" alt="Imagen 3">
-                <img src="../images/SaoIF 4.png" alt="Imagen 4">
-                <img src="../images/SaoIF 5.png" alt="Imagen 5">
-                <img src="../images/SaoIF 6.jpg" alt="Imagen 6">
-                <img src="../images/SaoIF 7.jpg" alt="Imagen 7">
+                <img src="../images/SaoIF 1.png" alt="Imagen del Carrusel 1 - 1">
+                <img src="../images/SaoIF 2.png" alt="Imagen del Carrusel 1 - 2">
+                <img src="../images/SaoIF 3.png" alt="Imagen del Carrusel 1 - 3">
+                <img src="../images/SaoIF 4.png" alt="Imagen del Carrusel 1 - 4">
+                <img src="../images/SaoIF 5.png" alt="Imagen del Carrusel 1 - 5">
+                <img src="../images/SaoIF 6.jpg" alt="Imagen del Carrusel 1 - 6">
+                <img src="../images/SaoIF 7.jpg" alt="Imagen del Carrusel 1 - 7">
             </div>
             <button class="prev">&lt;</button>
             <button class="next">&gt;</button>
         </div>
 
-        <!-- Carrusel 2 -->
+        <!-- Carrusel 2 
         <div class="carousel-2">
             <div class="carousel-2-container">
-                <img src="../images/Tarisland 2.jpg" alt="Imagen 10">
-                <img src="../images/Tarisland 3.jpg" alt="Imagen 11">
-                <img src="../images/Tarisland 4.jpg" alt="Imagen 12">
+                <img src="../images/Tarisland 2.jpg" alt="Imagen del Carrusel 2 - 10">
+                <img src="../images/Tarisland 3.jpg" alt="Imagen del Carrusel 2 - 11">
+                <img src="../images/Tarisland 4.jpg" alt="Imagen del Carrusel 2 - 12">
             </div>
             <button class="prev">&lt;</button>
             <button class="next">&gt;</button>
-        </div>
+        </div> -->
     </section>
 
     <footer>
@@ -60,17 +71,11 @@
             <a href="https://api.whatsapp.com/send/?phone=542975440834" rel="noopener" target="_blank">
                 <img src="../images/icons8-whatsapp-50.png" alt="WhatsApp">
             </a>
-            <a href="https://www.instagram.com/yair_herrera26/" rel="noopener" target="_blank">
-                <img src="../images/icons8-insta-50.png" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com" rel="noopener" target="_blank">
-                <img src="../images/icons8-facebook-50.png" alt="Facebook">
-            </a>
             <a href="https://discord.gg/UED4TXmzNx" rel="noopener" target="_blank">
                 <img src="../images/icons8-discord-50.png" alt="Discord">
             </a>
         </div>
-        <h6><em>© Lucca Herrera</em></h6>
+        <h6><em>©Lucca Herrera</em></h6>
     </footer>
 
     <script>
@@ -89,7 +94,11 @@
             index1 = (index1 - 1 + carousel1.children.length) % carousel1.children.length;
             carousel1.style.transform = `translateX(${-index1 * 100}%)`;
         });
+    </script>
 
+    <!-- Script para el segundo carrusel (actualmente inactivo) -->
+    <!--
+    <script>
         // JavaScript para el funcionamiento del Carrusel 2
         const carousel2 = document.querySelector('.carousel-2-container');
         const prevBtn2 = document.querySelector('.carousel-2 .prev');
@@ -106,6 +115,7 @@
             carousel2.style.transform = `translateX(${-index2 * 100}%)`;
         });
     </script>
+    -->
 </body>
 
 </html>

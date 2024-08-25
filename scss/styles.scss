@@ -1,9 +1,10 @@
+/* Importar archivos SCSS */
 @import './base/reset';
-@import './layout/header';
-@import './layout/home';
-@import './layout/sections';
-@import './layout/carousel';
-@import './layout/footer';
-@import './layout/responsive';
-@import './layout/utilities';
-@import './layout/bootstrap';
+@import './layouts/bootstrap';
+@import './layouts/header';
+@import './layouts/home';
+@import './layouts/carousel';
+@import './layouts/sections';
+@import './layouts/footer';
+@import './layouts/responsive';
+@import './layouts/utilities';
